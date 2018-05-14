@@ -8,6 +8,7 @@ function start () {
   one()
   two()
   three()
+  makeVisible()
     
   // Your turn! Create a new function called `two`, then call it from here.
 }
@@ -23,20 +24,20 @@ function one () {
 // CREATE FUNCTION two HERE
 
 function two () {
-  var one = document.getElementById('two')
-  one.classList.add('green')
+  var two = document.getElementById('two')
+  two.classList.add('green')
 }
 
 // CREATE FUNCTION three HERE
 
 function three () {
-  var one = document.getElementById('three')
-  one.classList.add('red')
+  var three = document.getElementById('three')
+  three.classList.add('red')
 }
 
 // CREATE FUNCTION makeVisible HERE
 
-function one () {
-  var one = document.getElementById('one')
-  one.classList.add('blue')
-}
+function makeVisible () {
+  var makeVisible = document.getElementsByClassName('invisible')
+  makeVisible[0].classList.add('visible')
+}     
